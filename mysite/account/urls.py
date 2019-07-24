@@ -10,4 +10,5 @@ urlpatterns = [
     #基于类的方式auth_views.LoginView.as_view()
 
     path('logout/',auth_views.LogoutView.as_view(template_name='account/logout.html'),name='user_logout'),
+    path('register/',views.register,name='user_register'),
 ]
